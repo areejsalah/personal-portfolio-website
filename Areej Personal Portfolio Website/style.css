@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image{
+    float: right;
+    width: 50%;
+    height: 40%;
+    background-image: url(images/image2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#header{
+    margin-top: 10px;
+ margin-right: 60px;  
+
+}
+#container{
+   display: flex;
+   column-gap: 10%;
+   width: 100%;
+   height:680px;
+   
+   
+  
+   
+}
+.container1{
+    display: flex;
+    column-gap: 10%;
+    width: 100%;
+    height:600px;
+    
+   
+    
+ }
+.image1{
+    
+    
+    margin-top:10% ;
+    float: right;
+    width: 50%;
+    height: 50%;
+} 
+.data{
+    padding-top: 120px;
+    
+  margin-left: 20%;
+}
+.image1 img{
+    box-shadow: -8px 0 10px 5px rgb(171, 172, 103);
+   
+    border-radius: 0px 0px 0px 140px;
+    max-width: 100%;
+    max-height: 100%;
+       
+    
+    object-fit: cover;
+}
+nav{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+nav li {
+    display: inline-block;
+    list-style:none;
+    margin: 10px 20px;
+}
+nav li a {
+    color: #000;
+text-decoration: none;
+font-size: 18px;
+}
+nav li:hover , nav li a:hover{
+    color: #D1884F;
+}
+
+ #p1{
+    
+ color  :#3BBADB ;
+ 
+
+ }
+ #hi{
+    font-size: 30px;
+    color:  #008AAA;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+ }
+ #dev{
+    color: #D1884F;
+ }
+ .info{
+    font: weight 400px;
+padding: 30px 0 30px 0;
+ }
+ #btns{
+    margin-top: 25%;
+ }
+ 
+ .btn1{
+  padding: 4px 20px;
+  background-color:  #008AAA ;
+  color: white;
+  border: 1px solid  #008AAA;
+  border-radius: 4px;
+  box-shadow: 0px 4px 0px #d7e3e5 ;
+  font-size: 15px;
+  
+  margin-right: 10%;
+
+ }
+ .btn2{
+    padding: 4px 20px;
+    font-size: 15px;
+    border: 1px solid  #008AAA ;
+    color: #008AAA;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px #d7e3e5 ;
+ }
+ .row{
+display: flex;
+margin-left: 40px;
+width: 220vh;
+height: 140vh;
+ }
+ 
+ .about-col-1{
+    flex-basis: 60%;
+   
+ }
+ .about-col-1 img{
+   width: 50%;
+   height: 50%;
+   border-radius: 10px;
+ }
+ .sub-title{
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #008AAA;
+ }
+ .about-col-2 p{
+    margin: 20px 20px;
+    font-size: 20px;
+    font-weight: 200;
+   
+ }
+ .tab-links{
+    margin: 10px 10px;
+    font-size: 30px;
+    color:#3BBADB;
+ }
+ .about-col-2{
+    flex-basis: 35%;
+ }
+ .tab-contents{
+    margin: 10px 20px;
+ }
+ .tab-contents ul li {
+    font-size: 20px;
+    margin: 10px 0;
+ }
+ .contact-left{
+    flex-basis: 35%;
+ }
+ .contact-right{
+    flex-basis: 60%;
+ }
+ .contact-left p{
+    margin-top: 30px;
+ }
+ .contact-left p i {
+    color:#000;
+    margin-right: 15px;
+    font-size: 25px;
+ }
+ .social-icons{
+    margin-top: 30px;
+ }
+ .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#3BBADB;
+    display: inline-block;
+    transition: transform 0.5s;
+ }
+ .social-icons a:hover{
+    color:#D1884F;
+    transform: translateY(-5px);
+ }
+.btn.btn2{
+    margin-top: 40px;
+    display: inline-block;
+    background-color: #008AAA;
+    color: white;
+    text-decoration: none;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #919462;
+    padding: 15px;
+    margin: 15px 0;
+    color:#545050;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.footer{
+    
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #919462;
+    font-weight: 300;
+    
+}
+#contact{
+    padding-top: 60px;
+}
+#about{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+nav .fas{
+    display: none;
+}
+@media only screen and (max-with: 600px){
+   nav .fas{
+    display: block;
+    font-size: 25px;
+   }
+   nav url{
+    background: #008AAA;
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+   }
+   nav ul li {
+    display: block;
+    margin: 25px;
+   }
+}
+
+
+ 
