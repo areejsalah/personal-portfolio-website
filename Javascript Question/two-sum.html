@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    var twoSum = function(nums, target) {
+    const hashmap = {};
+    for (let i = 0; i  <  nums.length; i++) {
+      const diff = target - nums[i];
+  
+      // If the difference is in the hashmap, return the indices.
+      if (diff in hashmap) { // or, hashmap[diff] !== undefined
+        return [hashmap[diff], i];
+      }
+  
+      // Otherwise, add the current number to the hashmap.
+      hashmap[nums[i]] = i;
+    }
+  
+    return [];
+  };
+  let result = twoSum([3, 2, 4],6);
+document.getElementById("demo").innerHTML = result;
+</script>
+</body>
+</html>
+
